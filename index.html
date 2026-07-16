@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Princess ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- Voice -->
+<audio id="wish">
+    <source src="music/wish.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Background Song -->
+<audio id="music">
+    <source src="music/song.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Birthday Lock Screen -->
+
+<div id="tapScreen">
+
+    <div id="giftIntro">
+        🎁
+    </div>
+
+    <h1>Tap To Open Your Birthday Surprise ❤️</h1>
+
+    <p>
+        Made Especially For You ✨
+    </p>
+
+</div>
+
+<!-- Floating Hearts -->
+
+<div id="hearts"></div>
+
+<!-- Loading Screen -->
+
+<div id="loadingScreen">
+
+    <div class="loaderBox">
+
+        <h1>❤️</h1>
+
+        <h2>Preparing a Surprise...</h2>
+
+        <div class="progress">
+
+            <div class="progressBar"></div>
+
+        </div>
+
+        <p>Please Wait Princess...</p>
+
+    </div>
+
+</div>
+
+<!-- ================= PAGE 1 ================= -->
+
+<section id="page1" class="page active">
+
+<div class="glass">
+
+<h1 class="mainTitle">
+Hey Princess 👑
+</h1>
+
+<p class="subtitle">
+I made something special just for you...
+</p>
+
+<h2 class="question">
+Will you go on a date with me
+<br><br>
+on your birthday?
+<br><br>
+🥺❤️
+</h2>
+
+<div class="btnBox">
+
+<button id="yesBtn">
+YES 💖
+</button>
+
+<button id="noBtn">
+NO 🙈
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PAGE 2 ================= -->
+
+<section id="page2" class="page">
+
+<div class="glass">
+
+<h1>
+🥺 Waittt Princess...
+</h1>
+
+<p>
+Think once again...
+</p>
+
+<p>
+Are you really sure? ❤️
+</p>
+
+<div class="btnBox">
+
+<button id="yesAgain">
+Okay I'll Go 💕
+</button>
+
+<button id="noAgain">
+Still No 😝
+</button>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= PAGE 3 ================= -->
+
+<section id="page3" class="page">
+
+<div class="photoCard">
+
+<img src="assets/photo1.jpeg" alt="Princess">
+
+<h1>
+Happy Birthday Princess ❤️
+</h1>
+
+<p>
+From the very beginning,
+you have made life brighter.
+I hope today brings you
+the same happiness
+that you bring to everyone.
+</p>
+
+<button id="next1">
+Continue →
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= PAGE 4 ================= -->
+
+<section id="page4" class="page">
+
+<div class="photoCard">
+
+<img src="assets/photo2.jpeg" alt="Princess">
+
+<h1>
+A Little Message For You 💕
+</h1>
+
+<p>
+Some people make life special
+just by being a part of it.
+
+You are one of those beautiful
+people who bring happiness
+without even trying. ❤️
+</p>
+
+<button id="next2">
+Open My Letter 💌
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= PAGE 5 ================= -->
+
+<section id="page5" class="page">
+
+<div class="letterBox">
+
+<div class="envelope">
+💌
+</div>
+
+<h1>
+Dear Sakshi ❤️
+</h1>
+
+<p class="letter">
+
+Happy Birthday Princess 👑
+
+<br><br>
+
+Thank you for being such a
+beautiful part of my life.
+
+Your smile,
+your happiness,
+and your little moments
+mean more than words can explain.
+
+<br><br>
+
+I hope this birthday brings you
+endless happiness,
+success,
+and everything you wish for.
+
+<br><br>
+
+Keep smiling always because
+your smile is truly special. ❤️
+
+<br><br>
+
+With lots of love ❤️
+
+</p>
+
+<button id="next3">
+One Last Surprise 🎁
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= PAGE 6 ================= -->
+
+<section id="page6" class="page">
+
+<div class="giftBox">
+
+<h1>
+One Last Surprise 👀
+</h1>
+
+<div id="gift">
+🎁
+</div>
+
+<p>
+Click the gift box
+</p>
+
+</div>
+
+</section>
+<!-- ================= PAGE 7 ================= -->
+
+<section id="page7" class="page">
+
+<div class="memoryBox">
+
+<h1>
+Our Beautiful Memories 📸
+</h1>
+
+<p>
+Every moment spent with you is a special memory
+that I will always cherish forever. ❤️
+</p>
+
+<div class="memoryGrid">
+
+<img src="assets/photo1.jpeg" alt="Memory 1">
+
+<img src="assets/photo2.jpeg" alt="Memory 2">
+
+</div>
+
+<button id="next4">
+Final Message ❤️
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= PAGE 8 ================= -->
+
+<section id="page8" class="page">
+
+<div class="finalBox">
+
+<h1>
+For You, Princess 👑❤️
+</h1>
+
+<p>
+
+No matter where life takes us,
+
+I will always wish the best for you.
+
+<br><br>
+
+Keep smiling,
+
+keep achieving your dreams,
+
+and always stay the amazing person you are.
+
+<br><br>
+
+Happy Birthday once again,
+
+Sakshi ❤️🎂
+
+</p>
+
+<h2>
+
+Forever Special 💕
+
+</h2>
+
+</div>
+
+</section>
+
+<!-- ================= PAGE 9 ================= -->
+
+<section id="page9" class="page">
+
+<div class="surpriseBox">
+
+<h1>
+A Special Surprise For You 🎉
+</h1>
+
+<div class="cake">
+🎂
+</div>
+
+<p>
+
+May your life always be filled with happiness,
+
+love,
+
+success,
+
+and endless smiles. ❤️
+
+</p>
+
+<div class="hearts">
+
+❤️ 💕 💖 ❤️ 💕
+
+</div>
+
+<h2>
+
+Happy Birthday Sakshi 👑
+
+</h2>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<section class="footerPage">
+
+<div>
+
+<p>
+Made with lots of love ❤️
+</p>
+
+<p>
+For the most special person ✨
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= JAVASCRIPT START ================= -->
+
+<script>
+    // ================= PAGES =================
+
+let pages = document.querySelectorAll(".page");
+
+function showPage(index){
+
+    pages.forEach(page=>{
+        page.classList.remove("active");
+    });
+
+    pages[index].classList.add("active");
+
+}
+
+// Start
+showPage(0);
+
+// ================= PAGE BUTTONS =================
+
+document.getElementById("yesBtn").onclick=function(){
+    showPage(2);
+};
+
+document.getElementById("noBtn").onclick=function(){
+    showPage(1);
+};
+
+document.getElementById("yesAgain").onclick=function(){
+    showPage(2);
+};
+
+document.getElementById("noAgain").onclick=function(){
+    showPage(0);
+};
+
+document.getElementById("next1").onclick=function(){
+    showPage(3);
+};
+
+document.getElementById("next2").onclick=function(){
+    showPage(4);
+};
+
+document.getElementById("next3").onclick=function(){
+    showPage(5);
+};
+
+document.getElementById("gift").onclick=function(){
+    showPage(6);
+};
+
+document.getElementById("next4").onclick=function(){
+    showPage(7);
+};
+
+// ================= MOVING NO BUTTON =================
+
+const noBtn=document.getElementById("noBtn");
+
+noBtn.addEventListener("mouseover",()=>{
+
+    let x=Math.random()*250-125;
+    let y=Math.random()*150-75;
+
+    noBtn.style.transform=`translate(${x}px,${y}px)`;
+
+});
+
+// ================= FLOATING HEARTS =================
+
+setInterval(()=>{
+
+    let heart=document.createElement("div");
+
+    heart.className="heart";
+
+    heart.innerHTML="❤️";
+
+    heart.style.left=Math.random()*100+"vw";
+
+    heart.style.animationDuration=(Math.random()*3+3)+"s";
+
+    document.getElementById("hearts").appendChild(heart);
+
+    setTimeout(()=>{
+
+        heart.remove();
+
+    },6000);
+
+},300);
+// ================= BIRTHDAY LOCK =================
+
+window.onload = function () {
+
+    showPage(0);
+
+    const today = new Date();
+
+    // Demo ke liye 21 rakha hai.
+    // Birthday wale din 21 kar dena.
+    if (today.getDate() == 21 && today.getMonth() == 6) {
+
+        document.getElementById("tapScreen").style.display = "flex";
+
+    } else {
+
+        document.getElementById("tapScreen").innerHTML = `
+            <h1>🎁</h1>
+            <h2>Your Birthday Surprise is Locked ❤️</h2>
+            <p>Come back on <b>21 July</b> to open your special surprise.</p>
+        `;
+
+    }
+
+};
+
+// ================= TAP TO OPEN =================
+
+const tapScreen = document.getElementById("tapScreen");
+const giftIntro = document.getElementById("giftIntro");
+
+giftIntro.onclick = function(){
+
+    const today = new Date();
+
+    if(today.getDate()!=21 || today.getMonth()!=6){
+        return;
+    }
+
+    giftIntro.innerHTML="💖";
+
+    giftIntro.style.transform="scale(1.5)";
+
+    setTimeout(()=>{
+
+        tapScreen.style.display="none";
+
+        const voice=document.getElementById("wish");
+        const music=document.getElementById("music");
+
+        voice.play();
+
+        confetti({
+
+            particleCount:300,
+
+            spread:180,
+
+            origin:{y:0.6}
+
+        });
+
+        voice.onended=function(){
+
+            music.volume=0.3;
+
+            music.play();
+
+        };
+
+    },800);
+
+};
+</script>
+
+</body>
+
+</html>
